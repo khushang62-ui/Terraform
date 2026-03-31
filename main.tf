@@ -17,7 +17,6 @@ resource "aws_instance" "qualys_machine" {
   root_block_device {
     volume_size = var.volume_size
     volume_type = "gp3"
-    kms_key_id  = var.instance_kms_key_id
     encrypted   = true
   }
 }
